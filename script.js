@@ -11,8 +11,12 @@ themeButton.addEventListener("click", function (){
   if (currentBodyBg.includes(lightBg)) {
     body.style.background = "#120";
     body.style.color = "#FFF";
+
+    themeButton.innerText = "☀️"
   } else {
     body.style.background = lightBg;
     body.style.color = "#000";
+
+    themeButton.innerText = "🌑"
   }
 })
