@@ -44,3 +44,9 @@ img {
 #hero-images img {
   border-radius: 10px;
 }
+
+#console-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}

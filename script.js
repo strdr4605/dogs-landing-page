@@ -20,3 +20,11 @@ themeButton.addEventListener("click", function (){
     themeButton.innerText = "🌑"
   }
 })
+
+const consoleBtn = document.getElementById("console-button");
+
+const consoleBtnClick = () => {
+  console.log("Hello from console", Math.random());
+}
+
+consoleBtn.addEventListener("click", consoleBtnClick);
