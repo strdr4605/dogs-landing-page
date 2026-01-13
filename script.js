@@ -28,3 +28,9 @@ const consoleBtnClick = () => {
 }
 
 consoleBtn.addEventListener("click", consoleBtnClick);
+
+const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat facilisis purus non semper. Etiam pharetraut justo vulputate fermentum. Etiam vehicula dui quis augue consequat feugiat."
+
+const infoParagraph = document.getElementById("info");
+
+infoParagraph.innerText = text;
