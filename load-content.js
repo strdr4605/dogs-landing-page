@@ -15,3 +15,15 @@ document.title = content.title;
 const heading1 = document.getElementsByTagName("h1")[0];
 heading1.innerText = content.title;
 
+const header = document.getElementsByTagName("header")[0];
+
+const paragraph = document.createElement("p");
+paragraph.innerText = content.info;
+paragraph.setAttribute("id", "info");
+
+header.after(paragraph);
+
+// const heading2 = document.getElementsByTagName("h2")[0];
+const heroSection = document.getElementById("hero");
+const heroSectionH2 = heroSection.getElementsByTagName("h2")[0];
+heroSectionH2.innerText = content.sectionName;

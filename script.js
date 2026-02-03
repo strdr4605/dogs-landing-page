@@ -28,11 +28,3 @@ const consoleBtnClick = () => {
 }
 
 consoleBtn.addEventListener("click", consoleBtnClick);
-
-const header = document.getElementsByTagName("header")[0];
-
-const paragraph = document.createElement("p");
-paragraph.innerText =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat facilisis purus non semper. Etiam pharetraut justo vulputate fermentum. Etiam vehicula dui quis augue consequat feugiat.";
-paragraph.setAttribute("id", "info");
-
-header.after(paragraph);
