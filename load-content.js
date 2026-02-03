@@ -27,3 +27,10 @@ header.after(paragraph);
 const heroSection = document.getElementById("hero");
 const heroSectionH2 = heroSection.getElementsByTagName("h2")[0];
 heroSectionH2.innerText = content.sectionName;
+
+
+// Add images
+const heroImages = document.getElementById("hero-images");
+const image = document.createElement("img");
+image.setAttribute("src", content.imageLinks[0]);
+heroImages.appendChild(image);
