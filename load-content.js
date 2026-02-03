@@ -10,3 +10,8 @@ const content = {
 };
 
 console.log(content);
+
+document.title = content.title;
+const heading1 = document.getElementsByTagName("h1")[0];
+heading1.innerText = content.title;
+
