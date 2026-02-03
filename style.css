@@ -38,6 +38,8 @@ img {
 
 #hero-images {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
   gap: 60px;
 }
 

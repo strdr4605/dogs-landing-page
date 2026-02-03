@@ -6,6 +6,8 @@ const content = {
     "https://images.dog.ceo/breeds/terrier-yorkshire/n02094433_2114.jpg",
     "https://images.dog.ceo/breeds/segugio-italian/n02090722_001.jpg",
     "https://images.dog.ceo/breeds/shihtzu/n02086240_1170.jpg",
+    "https://images.dog.ceo/breeds/affenpinscher/n02110627_8621.jpg",
+    "https://images.dog.ceo/breeds/terrier-scottish/n02097298_6383.jpg",
   ], 
 };
 
@@ -31,6 +33,13 @@ heroSectionH2.innerText = content.sectionName;
 
 // Add images
 const heroImages = document.getElementById("hero-images");
-const image = document.createElement("img");
-image.setAttribute("src", content.imageLinks[0]);
-heroImages.appendChild(image);
+// const image = document.createElement("img");
+// image.setAttribute("src", content.imageLinks[0]);
+// heroImages.appendChild(image);
+
+for (let i = 0; i < content.imageLinks.length; i++) {
+  const imageSrc = content.imageLinks[i];
+  const image = document.createElement("img");
+  image.setAttribute("src", imageSrc);
+  heroImages.appendChild(image);
+}
