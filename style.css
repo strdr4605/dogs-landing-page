@@ -28,12 +28,16 @@ img {
   width: 250px;
 }
 
-#hero {
+.my-section {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
+}
+
+.gray {
+  background: #EEE;
 }
 
 #hero-images {
@@ -51,4 +55,16 @@ img {
   position: fixed;
   right: 30px;
   bottom: 30px;
+}
+
+#dog-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#dog-form div {
+  display: flex;
+  gap: 20px;
 }

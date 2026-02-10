@@ -5,7 +5,7 @@ const lightBg = "rgb(238, 238, 204)";
 const body = document.getElementsByTagName("body")[0];
 const themeButton = document.getElementById("theme-button");
 
-themeButton.addEventListener("click", function (){
+themeButton.addEventListener("click", function () {
   const currentBodyBg = window.getComputedStyle(body).background;
 
   if (currentBodyBg.includes(lightBg)) {
@@ -28,3 +28,9 @@ const consoleBtnClick = () => {
 }
 
 consoleBtn.addEventListener("click", consoleBtnClick);
+
+const dogForm = document.getElementById("dog-form");
+console.log("dogForm: ", dogForm);
+dogForm.addEventListener("submit", () => {
+  console.log("dog form submitted");
+});
