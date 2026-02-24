@@ -55,3 +55,7 @@ dogForm.addEventListener("submit", (event) => {
   // Reset form inputs
   dogForm.reset();
 });
+
+
+const bestDog = document.getElementById("best-dog");
+bestDog.innerText = "Your dog Tuzic is the best!!";
