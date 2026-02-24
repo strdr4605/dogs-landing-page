@@ -57,5 +57,11 @@ dogForm.addEventListener("submit", (event) => {
 });
 
 
-const bestDog = document.getElementById("best-dog");
-bestDog.innerText = "Your dog Tuzic is the best!!";
+
+const yourDogName = document.getElementById("your-dog");
+yourDogName.addEventListener("input", (event) => {
+  console.log("input change", event.target.value);
+
+  const bestDog = document.getElementById("best-dog");
+  bestDog.innerText = "Your dog " + event.target.value + " is the best!!";
+});
