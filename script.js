@@ -64,4 +64,8 @@ yourDogName.addEventListener("input", (event) => {
 
   const bestDog = document.getElementById("best-dog");
   bestDog.innerText = "Your dog " + event.target.value + " is the best!!";
+
+  if (event.target.value == "") {
+    bestDog.innerText = "";
+  }
 });
