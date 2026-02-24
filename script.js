@@ -50,4 +50,8 @@ dogForm.addEventListener("submit", (event) => {
 
   // We need to add the created image at the end of out container for images
   heroImages.appendChild(suggetedDogImage);
+
+
+  // Reset form inputs
+  dogForm.reset();
 });
