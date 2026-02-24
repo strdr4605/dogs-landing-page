@@ -31,6 +31,27 @@ consoleBtn.addEventListener("click", consoleBtnClick);
 
 const dogForm = document.getElementById("dog-form");
 console.log("dogForm: ", dogForm);
-dogForm.addEventListener("submit", () => {
+dogForm.addEventListener("submit", (event) => {
+  event.preventDefault();
   console.log("dog form submitted");
+
+  const dogName = dogForm.elements['dog-name'].value;
+  console.log("dogName: ", dogName);
+  const dogImageLink = dogForm.elements['dog-image'].value;
+  console.log("dogImageLink: ", dogImageLink);
+
+  // Get element from page where dogs images are set
+  const heroImages = document.getElementById("hero-images");
+
+  // We create a new image and set source (link) and other attributes
+  const suggetedDogImage = document.createElement("img");
+  suggetedDogImage.setAttribute("src", dogImageLink);
+  suggetedDogImage.setAttribute("alt", dogName);
+
+  // We need to add the created image at the end of out container for images
+  heroImages.appendChild(suggetedDogImage);
+
+
+  // Reset form inputs
+  dogForm.reset();
 });
