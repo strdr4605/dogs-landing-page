@@ -47,7 +47,6 @@ function render(content) {
   const suggestedDogs = JSON.parse(suggestedDogString);
   console.log("suggestedDog: ", suggestedDogs);
 
-
   for (let i = 0; i < suggestedDogs.length; i++) {
     const imageSrc = suggestedDogs[i].imageLink;
     const name = suggestedDogs[i].name;
