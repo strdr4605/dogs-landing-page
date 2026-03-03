@@ -41,4 +41,25 @@ function render(content) {
     image.setAttribute("src", imageSrc);
     heroImages.appendChild(image);
   }
+
+  const suggestedDogString = localStorage.getItem("suggestedDog");
+  console.log("suggestedDogFromLocalStorage: ", suggestedDogString);
+  const suggestedDogs = JSON.parse(suggestedDogString);
+  console.log("suggestedDog: ", suggestedDogs);
+
+
+  for (let i = 0; i < suggestedDogs.length; i++) {
+    const imageSrc = suggestedDogs[i].imageLink;
+    const name = suggestedDogs[i].name;
+
+    const image = document.createElement("img");
+    image.setAttribute("src", imageSrc);
+    image.setAttribute("alt", name);
+    heroImages.appendChild(image);
+  }
+// const suggestedImage = document.createElement("img");
+// suggestedImage.setAttribute("src", suggestedDogs.imageLink);
+// suggestedImage.setAttribute("alt", suggestedDogs.name);
+// heroImages.appendChild(suggestedImage);
+
 }

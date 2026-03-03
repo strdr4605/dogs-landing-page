@@ -68,13 +68,25 @@ dogForm.addEventListener("submit", (event) => {
   const heroImages = document.getElementById("hero-images");
 
   // We create a new image and set source (link) and other attributes
-  const suggetedDogImage = document.createElement("img");
-  suggetedDogImage.setAttribute("src", dogImageLink);
-  suggetedDogImage.setAttribute("alt", dogName);
+  const suggestedDogImage = document.createElement("img");
+  suggestedDogImage.setAttribute("src", dogImageLink);
+  suggestedDogImage.setAttribute("alt", dogName);
 
   // We need to add the created image at the end of out container for images
-  heroImages.appendChild(suggetedDogImage);
+  heroImages.appendChild(suggestedDogImage);
 
+  const suggestedDog = {
+    name: dogName,
+    imageLink: dogImageLink
+  };
+
+  // get latest array data from storage
+  const suggestedDogString = localStorage.getItem("suggestedDog");
+  const storedSuggestedDogs = JSON.parse(suggestedDogString);
+
+  storedSuggestedDogs.push(suggestedDog);
+
+  localStorage.setItem("suggestedDog", JSON.stringify(storedSuggestedDogs));
 
   // Reset form inputs
   dogForm.reset();
