@@ -5,6 +5,26 @@ const lightBg = "rgb(238, 238, 204)";
 const body = document.getElementsByTagName("body")[0];
 const themeButton = document.getElementById("theme-button");
 
+window.addEventListener("load", () => {
+  console.log("page is fully loaded");
+
+  const theme = localStorage.getItem("theme");
+  console.log("theme: ", theme);
+
+  if (theme === 'dark') {
+    body.style.background = "#120";
+    body.style.color = "#FFF";
+
+    themeButton.innerText = "☀️"
+
+  } else {
+    body.style.background = lightBg;
+    body.style.color = "#000";
+
+    themeButton.innerText = "🌑"
+  }
+});
+
 themeButton.addEventListener("click", function () {
   const currentBodyBg = window.getComputedStyle(body).background;
 
@@ -13,11 +33,15 @@ themeButton.addEventListener("click", function () {
     body.style.color = "#FFF";
 
     themeButton.innerText = "☀️"
+
+    localStorage.setItem("theme", "dark");
   } else {
     body.style.background = lightBg;
     body.style.color = "#000";
 
     themeButton.innerText = "🌑"
+
+    localStorage.setItem("theme", "light");
   }
 })
 
