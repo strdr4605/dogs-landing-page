@@ -83,6 +83,15 @@ dogForm.addEventListener("submit", (event) => {
   // get latest array data from storage
   const suggestedDogString = localStorage.getItem("suggestedDog");
   console.log("suggestedDogString: ", suggestedDogString);
+
+  // let storedSuggestedDogs = undefined;
+  // if (!suggestedDogString) {
+  //   storedSuggestedDogs = [];
+  // } else {
+  //   storedSuggestedDogs = JSON.parse(suggestedDogString);
+  // }
+  //
+  // Code below is similar to commented code above
   const storedSuggestedDogs = JSON.parse(suggestedDogString) || [];
   console.log("storedSuggestedDogs: ", storedSuggestedDogs);
 
