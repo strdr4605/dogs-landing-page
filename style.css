@@ -47,6 +47,7 @@ img {
   gap: 60px;
 }
 
+#breed-section img,
 #hero-images img {
   border-radius: 10px;
 }
@@ -67,4 +68,8 @@ img {
 #dog-form div {
   display: flex;
   gap: 20px;
+}
+
+.breed-image {
+  margin-top: 2rem;
 }
