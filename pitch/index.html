@@ -29,9 +29,19 @@
     }
     .reveal .split-card h3 { color: #e8c97e; margin-top: 0; font-size: 1em; }
     .reveal .emoji { font-size: 2em; display: block; margin-bottom: 0.2em; }
+
+    #bg {
+      position: fixed;
+      inset: -10px;
+      background: url('https://images.dog.ceo/breeds/clumber/n02101556_8039.jpg') center/cover no-repeat;
+      filter: blur(8px) brightness(0.3);
+      z-index: 0;
+    }
+    .reveal { z-index: 1; position: relative; }
   </style>
 </head>
 <body>
+<div id="bg"></div>
 <div class="reveal">
   <div class="slides">
 
@@ -101,7 +111,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
 <script>
-  Reveal.initialize({ hash: true, transition: 'fade' });
+  Reveal.initialize({ hash: true, transition: 'fade', autoSlide: 5000, loop: true });
 </script>
 </body>
 </html>
