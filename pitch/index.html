@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs Landing Page — Pitch</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <style>
+    .reveal h1 { font-size: 2.2em; }
+    .reveal h2 { font-size: 1.6em; color: #e8c97e; }
+    .reveal p, .reveal li { font-size: 1.1em; line-height: 1.6; }
+    .reveal ul { list-style: none; padding: 0; }
+    .reveal ul li::before { content: "→ "; color: #e8c97e; }
+    .reveal .team-name { color: #aaa; font-size: 0.85em; margin-top: 0.3em; }
+    .reveal .highlight { color: #e8c97e; }
+    .reveal .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin-top: 1em;
+    }
+    .reveal .split-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 1.2em 1.5em;
+    }
+    .reveal .split-card h3 { color: #e8c97e; margin-top: 0; font-size: 1em; }
+    .reveal .emoji { font-size: 2em; display: block; margin-bottom: 0.2em; }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Slide 1: Title -->
+    <section>
+      <h1>🐶 Dogs Landing Page</h1>
+      <p class="team-name">Team: [Name] &amp; [Name]</p>
+      <p class="team-name">Class 11 — Group Project Pitch</p>
+    </section>
+
+    <!-- Slide 2: The Problem -->
+    <section>
+      <h2>The Problem</h2>
+      <ul>
+        <li>Dog lovers have no simple place to <span class="highlight">discover breeds</span></li>
+        <li>Hard to find <span class="highlight">real photos</span> of specific breeds quickly</li>
+        <li>No easy way to <span class="highlight">share your own dog</span> with others</li>
+      </ul>
+    </section>
+
+    <!-- Slide 3: Our Idea -->
+    <section>
+      <h2>Our Idea</h2>
+      <p>A <span class="highlight">clean, friendly landing page</span> for dog lovers.</p>
+      <br>
+      <p>Browse dogs by breed, suggest your own, and personalize your experience.</p>
+    </section>
+
+    <!-- Slide 4: Features -->
+    <section>
+      <h2>Features We Want to Build</h2>
+      <ul>
+        <li>Browse a curated list of dogs with images</li>
+        <li>Pick a breed and see a random dog photo</li>
+        <li>Suggest your own dog (name + photo)</li>
+        <li>Light / dark theme toggle</li>
+      </ul>
+    </section>
+
+    <!-- Slide 5: Who Is It For -->
+    <section>
+      <h2>Who Is It For?</h2>
+      <ul>
+        <li>Dog lovers who want to explore breeds</li>
+        <li>People curious about what a breed looks like</li>
+        <li>Anyone who wants to share their dog</li>
+      </ul>
+    </section>
+
+    <!-- Slide 6: Team Split -->
+    <section>
+      <h2>Team Split</h2>
+      <div class="split-grid">
+        <div class="split-card">
+          <h3>Person A</h3>
+          <p>Design &amp; page structure</p>
+        </div>
+        <div class="split-card">
+          <h3>Person B</h3>
+          <p>Interactivity &amp; features</p>
+        </div>
+      </div>
+      <p style="margin-top:1.2em; color:#aaa; font-size:0.8em;">* rough split, may change</p>
+    </section>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({ hash: true, transition: 'fade' });
+</script>
+</body>
+</html>
